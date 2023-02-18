@@ -1,7 +1,6 @@
 #include <stdio.h>
-
 /**
- * main - an app that prints base 16 
+ * main - an app that prints base 16
  * Return: Always 0 (success)
  */
 int main(void)
