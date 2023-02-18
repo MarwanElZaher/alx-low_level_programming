@@ -1,19 +1,17 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
- *main - It is a program that print alphabet letter followed by new line
- *
- *Return: Always 0 (means succes)
+ * main - an app to print alphabets from a to z
+ * Return: Always 0 (means success)
  */
 int main(void)
 {
-	int letter;
-	
-	for (letter = 'a'; letter <= 'z'; letter++)
-	{
-	letter = tolower(letter);
-	putchar(letter);
+	char alphabet = 'a';
+
+	for (alphabet = 'a' ; alphabet <= 'z' ; alphabet++)
+	{	alphabet = tolower(alphabet);
+		putchar(alphabet);
 	}
-	putchar('\n');
+		putchar('\n');
 	return (0);
 }
