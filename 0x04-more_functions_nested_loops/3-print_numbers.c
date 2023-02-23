@@ -11,4 +11,5 @@ int a;
 	{
 	_putchar(a);
 	}
+_putchar('\n');
 }
