@@ -7,20 +7,12 @@
  */
 char *_strchr(char *s, char c)
 {
-char *pointer;
-int count;
+	int i = 0;
 
-	for (count = 0; s[count] != '\0'; count++)
+	for (; s[i] >= '\0'; i++)
 	{
-		if (s[count] == c)
-		{
-			pointer = &s[count];
-			break;
-		}
+		if (s[i] == c)
+		return (&s[i]);
 	}
-	if (s[count] == c)
-	{
-		pointer = &s[count];
-	}
-	return (pointer);
+	return (0);
 }
