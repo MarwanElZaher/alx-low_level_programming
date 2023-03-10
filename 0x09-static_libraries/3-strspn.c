@@ -1,17 +1,33 @@
 #include "main.h"
 /**
- * _strcmp - it is a function used to compare two strings.
- * @s1: string 1 to be compared with string number 2.
- * @s2: string 2 to be compared with string number 1.
- * Return: always 0 (means success).
+ * _strspn - entry point
+ * @s: input char
+ * @accept: input char
+ * Return: always 0 means success.
  */
-int _strcmp(char *s1, char *s2)
+unsigned int _strspn(char *s, char *accept)
 {
-int a;
+unsigned int a = 0;
+int b;
 
-	for (a = 0 ; s1[a] != '\0' && s1[a] == s2[a] ;)
+	while (*s)
 	{
-	a++;
+		for (b = 0 ; accept[b] ; b++)
+		{
+			if (*s == accept[b])
+			{
+			a++;
+			break;
+			}
+				else if (accept[b + 1] == '\0')
+				return (a);
+		}
+		s++;
+
 	}
-return (s1[a] - s2[a]);
+
+
+return (a);
+
+
 }
