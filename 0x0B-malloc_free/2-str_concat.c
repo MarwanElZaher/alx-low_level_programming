@@ -22,9 +22,13 @@ int i, j;
 			s2 = "";
 			}
 	for (lengths1 = 0 ; s1[lengths1] != '\0' ;)
+	{
 		lengths1++;
+	}
 	for (lengths2 = 0 ; s2[lengths2] != '\0' ;)
+	{
 		lengths2++;
+	}
 	pointer = malloc(sizeof(char) * (lengths1 + lengths2 + 1));
 	if (pointer == NULL)
 		return (NULL);
