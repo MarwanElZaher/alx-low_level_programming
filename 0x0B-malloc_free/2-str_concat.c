@@ -15,11 +15,11 @@ int i, j;
 
 	if (s1 == NULL)
 		{
-		s1 = '\0';
+		s1 = " ";
 		}
 		else if (s2 == NULL)
 			{
-			s2 = '\0';
+			s2 = " ";
 			}
 	for (lengths1 = 0 ; s1[lengths1] != '\0' ;)
 		lengths1++;
