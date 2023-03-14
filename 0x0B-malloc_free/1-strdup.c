@@ -16,7 +16,9 @@ int i;
 	if (str == 0)
 	return (NULL);
 		for (size = 0 ; str[size] != '\0';)
+		{
 			size++;
+		}
 
 			pointer = (char *) malloc(sizeof(char) * size + 1);
 				if (pointer == 0)
