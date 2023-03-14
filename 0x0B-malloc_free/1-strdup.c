@@ -13,12 +13,12 @@ char *pointer;
 int size;
 int i;
 
-	if (str == NULL)
+	if (str == 0)
 	return (NULL);
 		for (size = 0 ; str[size] != '\0' ; size++)
 
 			pointer = malloc(sizeof(char) * size + 1);
-				if (pointer == NULL)
+				if (pointer == 0)
 				{
 				return (NULL);
 				}
@@ -28,5 +28,4 @@ int i;
 							i++;
 						}
 							return (pointer);
-							free(pointer);
 }
