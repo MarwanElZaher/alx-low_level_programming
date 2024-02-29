@@ -1,5 +1,5 @@
-#ifndef LISTS_H
-#define LISTS_H
+#ifndef _LISTS_H_
+#define _LISTS_H_
 
 #include <string.h>
 #include <stdio.h>
@@ -8,8 +8,9 @@
 
 /**
  * struct listint_s - singly linked list
- * @n: integer
- * @next: points to the next node
+ * for creating nodes for a singly linked lists
+ * @n: integer data type
+ * @next: points to the next node of a list
  *
  * Description: singly linked list node structure
  */
@@ -20,4 +21,5 @@ typedef struct listint_s
 } listint_t;
 
 size_t print_listint(const listint_t *h);
+
 #endif
